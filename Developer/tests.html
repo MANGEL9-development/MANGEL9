@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tests</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../CSS/style.css" />
+		<link rel="stylesheet" href="../CSS/style-subsite.css" />
+		<script type="text/javascript" src="../JS/script.js"></script>
+		<link rel="icon" href="../CSS/icon_2020-01-29.png" />
+		<script type="text/javascript">
+			window.addEventListener("load",function(){
+				fadeParagraphs();
+				window.addEventListener("scroll",function(e){
+					fadeParagraphs();
+				});
+			});
+			function fadeParagraphs(){
+				for(var i=1;i<=5;i++){
+					var y=document.getElementById("paragraph-"+i).getBoundingClientRect().top/screen.availHeight;
+					document.getElementById("paragraph-"+i).style.opacity=((0-(4*Math.pow((0.5-y),2)))+1);
+				}
+			}
+		</script>
+		<style type="text/css">
+			.fading-paragraph{
+				opacity:0;
+				/*transition:0.5s;*/
+				font:25px sans-serif;
+				color:#DDDDDD;
+				width:60%;
+				padding-left:5vw;
+				margin-bottom:200px;
+				text-align:justify;
+			}
+		</style>
+	</head>
+	<body onload="getLinks(1,'menu');"><!--
+		--><div id="film"><!--
+			--><div id="nav-container-container"><!--
+				--><div id="nav-container"><!--
+					--><div id="nav"><!--
+						--><ul id="menu"></ul><!--
+					--></div><!--
+					--><div id="logo"><!--
+						--><span id="sitename">MANGEL9</span><!--
+					--></div><!--
+				--></div><!--
+			--></div><!--
+			--><div id="content">
+				<div id="padding" style="height:calc(50vh - 120px);width:100%;"></div>
+				<ul>
+					<li><a href="Tests/buttons.html">Buttons</a></li>
+					<li><a href="Tests/opacity_and_color.html">Opacity and Color</a></li>
+				</ul>
+			</div>
+			<div id="footer-container">
+				<div id="footer-gradient"></div>
+				<div id="footer">footer</div>
+			</div>
+		</div>
+	</body>
+</html>

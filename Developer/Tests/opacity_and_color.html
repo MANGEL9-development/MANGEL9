@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Opacity and Color</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../../CSS/style.css" />
+		<link rel="stylesheet" href="../../CSS/style-subsite.css" />
+		<link rel="stylesheet" href="tests.css" />
+		<script type="text/javascript" src="../../JS/script.js"></script>
+		<link rel="icon" href="../../CSS/icon_2020-01-29.png" />
+		<!--<script type="text/javascript">
+			window.addEventListener("load",function(){
+				fadeParagraphs();
+				window.addEventListener("scroll",function(e){
+					fadeParagraphs();
+				});
+			});
+			function fadeParagraphs(){
+				for(var i=1;i<=5;i++){
+					var y=document.getElementById("paragraph-"+i).getBoundingClientRect().top/screen.availHeight;
+					document.getElementById("paragraph-"+i).style.opacity=((0-(4*Math.pow((0.5-y),2)))+1);
+				}
+			}
+		</script>-->
+		<style type="text/css">
+			#container{
+				width:40vh;
+				height:40vh;
+				border:2px solid #000000;
+				margin:0 auto;
+				display:grid;
+				grid-template-columns:auto auto;
+				grid-template-rows:auto auto;
+			}
+			#horizontal{
+				grid-column-start:1;
+				grid-column-end:3;
+				grid-row-start:1;
+				grid-row-end:2;
+				background-color:HSLA(0,100%,50%,0.5);
+			}
+			#vertical{
+				grid-row-start:1;
+				grid-row-end:3;
+				grid-column-start:1;
+				grid-column-end:2;
+				background-color:hsla(240,100%,50%,0.5);
+			}
+		</style>
+		<script type="text/javascript">
+			var horizontalRect, verticalRect;
+			function update(val){
+				horizontalRect.style.backgroundColor="HSLA(0,100%,50%,"+(val/100)+")";
+				verticalRect.style.backgroundColor="HSLA(240,100%,50%,"+(val/100)+")";
+			}
+			window.addEventListener("load",function(){
+				horizontalRect=document.getElementById("horizontal");
+				verticalRect=document.getElementById("vertical");
+			});
+		</script>
+	</head>
+	<body onload="getLinks(2,'menu');"><!--
+		--><div id="film"><!--
+			--><div id="nav-container-container"><!--
+				--><div id="nav-container"><!--
+					--><div id="nav"><!--
+						--><ul id="menu"></ul><!--
+					--></div><!--
+					--><div id="logo"><!--
+						--><span id="sitename" style="font-size: 2.5vw;">MANGEL9</span><!--
+					--></div><!--
+				--></div><!--
+			--></div><!--
+			--><div id="content">
+				<div id="container">
+					<div id="vertical"></div>
+					<div id="horizontal"></div>
+				</div>
+				<input type="range" id="opacity" style="width:100%;" min="0" max="100" step="1" oninput="update(this.value)" />
+				<input type="color" onchange="document.getElementById('content').style.backgroundColor=this.value" />
+			</div>
+		</div>
+	</body>
+</html>

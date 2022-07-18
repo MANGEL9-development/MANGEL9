@@ -1,0 +1,101 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Cousine|Lato|Neuton|Hind|Roboto&display=swap');
+html{
+	min-height:100vh;
+}
+body{
+	margin:0;
+	padding:0;
+}
+a,input{
+	transition:0.25s all;
+}
+a{
+	text-decoration:none;
+	font-weight:600;
+	color:#E2E2E2;
+}
+a:hover{
+	color:#EEEEEE;
+}
+h1,h2,h3,h4,h5,h6{
+	margin-block-start: 0;
+  	margin-block-end: 0;
+  	padding-top:0.33em;
+  	font-family: 'Hind', sans-serif;
+  	font-weight:200;
+	color:#D3D3D3;
+	display:block;
+}
+/* font-size decreases by 0.75 with every heading level */
+h1{
+	font-size:144px;
+}
+h2{
+	font-size:108px;
+}
+h3{
+	font-size:81px;
+}
+h4{
+	font-size:61px;
+}
+h5{
+	font-size:46px;
+}
+h6{
+	font-size:34px;
+}
+input[type=email],input[type=number],input[type=text],input[type=password]{
+	background-color:RGBA(192,192,192,0.875);
+	border:1px solid RGB(224,224,224);
+	border-radius:0.3em;
+	color:#FFFFFF;
+	padding:0.3em;
+}
+input[type=email]:hover,input[type=number]:hover,input[type=text]:hover,input[type=password]:hover{
+	background-color:RGBA(180,180,180,0.875);
+}
+table{
+	width:100%;
+	border-collapse:collapse;
+	margin-top:10px;
+}
+td,th{
+	border:2px solid #111111;
+	margin:0;
+	padding:0.1em;
+	padding-left:0.25em;
+}
+th,table.first-column td:first-of-type{
+	background-color:HSLA(215,5%,25%,0.66);
+}
+
+#sitename{
+	font-family: 'Cousine', monospace;
+}
+#sitename{
+	cursor:default;
+}
+#sitename::selection{
+	background:none;
+}
+#content{
+	font:25px sans-serif;
+	color:#DDDDDD;
+}
+#content .fading-paragraph::selection{
+	color:#111111;
+	background-color:#EEEEEE;
+}
+
+.input-switch-container{
+	background-color:HSLA(0,0%,100%,0.420);
+	width:5em;
+	height:2em;
+}
+.input-switch-option{
+	height:100%;
+}
+.input-switch-text{
+	line-height:2em;
+}

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Solution Name="My Web Package" Version="1.0.0.5025">
+    <Details Title="My Web Package" Subject="" Company="" Author=""/>
+    <Files>
+        <File Name="index.html" Src="file0000.html">
+            <MetaInfo>
+                <MetaKey Name="vti_filesize" Value="IW|667"/>
+            </MetaInfo>
+        </File>
+        <File Name="default.html" Src="file0001.html">
+            <MetaInfo>
+                <MetaKey Name="vti_filesize" Value="IW|371"/>
+            </MetaInfo>
+        </File>
+        <Folder Name="About">
+            <MetaInfo>
+                <MetaKey Name="vti_hassubdirs" Value="BR|false"/>
+            </MetaInfo>
+            <File Name="default.html" Src="file0002.html">
+                <MetaInfo>
+                    <MetaKey Name="vti_filesize" Value="IW|6276"/>
+                </MetaInfo>
+            </File>
+        </Folder>
+        <Folder Name="Developer">
+            <MetaInfo>
+                <MetaKey Name="vti_hassubdirs" Value="BR|true"/>
+            </MetaInfo>
+            <File Name="tests.html" Src="file0003.html">
+                <MetaInfo>
+                    <MetaKey Name="vti_filesize" Value="IW|1879"/>
+                </MetaInfo>
+            </File>
+            <File Name="styles.html" Src="file0004.html">
+                <MetaInfo>
+                    <MetaKey Name="vti_filesize" Value="IW|3382"/>
+                </MetaInfo>
+            </File>
+            <File Name="developer.html" Src="file0005.html">
+                <MetaInfo>
+                    <MetaKey Name="vti_filesize" Value="IW|1074"/>
+                </MetaInfo>
+            </File>
+            <Folder Name="Tests">
+                <MetaInfo>
+                    <MetaKey Name="vti_hassubdirs" Value="BR|false"/>
+                </MetaInfo>
+                <File Name="tests.css" Src="file0006.css">
+                    <MetaInfo>
+                        <MetaKey Name="vti_filesize" Value="IW|90"/>
+                    </MetaInfo>
+                </File>
+                <File Name="opacity_and_color.html" Src="file0007.html">
+                    <MetaInfo>
+                        <MetaKey Name="vti_filesize" Value="IW|2718"/>
+                    </MetaInfo>
+                </File>
+                <File Name="buttons.html" Src="file0008.html">
+                    <MetaInfo>
+                        <MetaKey Name="vti_filesize" Value="IW|2832"/>
+                    </MetaInfo>
+                </File>
+            </Folder>
+        </Folder>
+        <Folder Name="JS">
+            <MetaInfo>
+                <MetaKey Name="vti_hassubdirs" Value="BR|false"/>
+            </MetaInfo>
+            <File Name="script.js" Src="file0009.js">
+                <MetaInfo>
+                    <MetaKey Name="vti_filesize" Value="IW|3262"/>
+                </MetaInfo>
+            </File>
+        </Folder>
+        <Folder Name="CSS">
+            <MetaInfo>
+                <MetaKey Name="vti_hassubdirs" Value="BR|false"/>
+            </MetaInfo>
+            <File Name="style.css" Src="file0010.css">
+                <MetaInfo>
+                    <MetaKey Name="vti_filesize" Value="IW|1783"/>
+                </MetaInfo>
+            </File>
+            <File Name="style-subsite.css" Src="file0011.css">
+                <MetaInfo>
+                    <MetaKey Name="vti_filesize" Value="IW|4219"/>
+                </MetaInfo>
+            </File>
+            <File Name="style-homepage.css" Src="file0012.css">
+                <MetaInfo>
+                    <MetaKey Name="vti_filesize" Value="IW|2877"/>
+                </MetaInfo>
+            </File>
+            <File Name="snow-covered-mountain-2086620.jpg" Src="file0013.jpg">
+                <MetaInfo>
+                    <MetaKey Name="vti_filesize" Value="IW|644696"/>
+                </MetaInfo>
+            </File>
+            <File Name="icon_2020-01-29.png" Src="file0014.png">
+                <MetaInfo>
+                    <MetaKey Name="vti_filesize" Value="IW|336"/>
+                </MetaInfo>
+            </File>
+            <File Name="grunge-1371402_1920_2.jpg" Src="file0015.jpg">
+                <MetaInfo>
+                    <MetaKey Name="vti_filesize" Value="IW|805513"/>
+                </MetaInfo>
+            </File>
+            <File Name="grunge-1371402_1920.jpg" Src="file0016.jpg">
+                <MetaInfo>
+                    <MetaKey Name="vti_filesize" Value="IW|1242433"/>
+                </MetaInfo>
+            </File>
+            <File Name="black-932213_1280.jpg" Src="file0017.jpg">
+                <MetaInfo>
+                    <MetaKey Name="vti_filesize" Value="IW|393257"/>
+                </MetaInfo>
+            </File>
+        </Folder>
+    </Files>
+</Solution>

@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Buttons</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../../CSS/style.css" />
+		<link rel="stylesheet" href="../../CSS/style-subsite.css" />
+		<link rel="stylesheet" href="tests.css" />
+		<script type="text/javascript" src="../../JS/script.js"></script>
+		<link rel="icon" href="../../CSS/icon_2020-01-29.png" />
+		<script type="text/javascript">
+			var transitioning=false;
+			
+			function hoverEffect(element){
+				console.log(element);
+				transitioning=true;
+				var backgroundImage=element.style.backgroundImage;
+				//console.log("element: "+);
+				console.log("backgroundImage: "+backgroundImage);
+				var startAngle;
+				try{
+					startAngle=backgroundImage.split("(")[1].split("deg")[0];
+				}
+				catch(e){
+					startAngle=157;
+				}
+				console.log("start angle: "+startAngle);
+				startAngle=parseInt(startAngle);
+				if(Number.isNaN(startAngle)){
+					startAngle=157;
+				}
+				var currentAngle=startAngle;
+				var interval=setInterval(function(){
+					console.log(currentAngle);
+					currentAngle=(currentAngle+1)%360;
+					element.style.backgroundImage="linear-gradient("+currentAngle+"deg,#E8F7FA,#575B5C,#E8F7FA)";
+					if(transitioning==false){
+						clearInterval(interval);
+					}
+				},10);
+			}
+			
+			function endEffect(){
+				transitioning=false;
+			}
+		</script>
+		<style type="text/css">
+			/*@keyframes hover-effect{
+				0%{ background-image:linear-gradient(157deg,#E8F7FA,#575B5C,#E8F7FA); }
+				50%{ background-image:linear-gradient(337deg,#E8F7FA,#575B5C,#E8F7FA); }
+				100%{ background-image:linear-gradient(157deg,#E8F7FA,#575B5C,#E8F7FA); }
+			}*/
+			#content{
+				background-color:#000000;
+			}
+			#button-border{
+				width:360px;
+				height:180px;
+				margin:50px auto;
+				padding:1px;
+				background-image:linear-gradient(157deg,#E8F7FA,#575B5C,#E8F7FA);
+			}
+			/*#button-border:hover{
+				animation:hover-effect 5s infinite;
+			}*/
+			#button{
+				width:360px;
+				height:180px;
+				background-color:#222222;
+				line-height:180px;
+				text-align:center;
+				font-size:75px;
+				color:#E8F7FA;
+				cursor:default;
+			}
+		</style>
+	</head>
+	<body onload="getLinks(2,'menu');"><!--
+		--><div id="film"><!--
+			--><div id="nav-container-container"><!--
+				--><div id="nav-container"><!--
+					--><div id="nav"><!--
+						--><ul id="menu"></ul><!--
+					--></div><!--
+					--><div id="logo"><!--
+						--><span id="sitename">MANGEL9</span><!--
+					--></div><!--
+				--></div><!--
+			--></div><!--
+			--><div id="content">
+				<div id="button-border" onmouseover="hoverEffect(this);" onmouseout="endEffect();">
+					<div id="button">BUTTON</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
