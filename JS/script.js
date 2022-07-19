@@ -28,7 +28,7 @@ function getLinks(level,elementID){
 	dots=repeatString("../",level);
 	
 	var links=[{adress:dots+"index.html" , text:"MANGEL9"},
-			   {adress:dots+"about" , text:"About"},
+			   {adress:dots+"about/default.html" , text:"About"},
 			   {adress:"#" , text:"Site3"},
 			   {adress:"#" , text:"Site4"}];
 	
