@@ -29,8 +29,8 @@ function getLinks(level,elementID){
 	
 	var links=[{adress:dots+"index.html" , text:"MANGEL9"},
 			   {adress:dots+"about/default.html" , text:"About"},
-			   {adress:"#" , text:"Site3"},
-			   {adress:"#" , text:"Site4"}];
+			   {adress:dots+"resume/default.html" , text:"Resume"},
+			   {adress:dots+"contact/default.html" , text:"Contact"}];
 	
 	for(var x=0;x<links.length;x++){
 		if(links[x].text==document.title){
