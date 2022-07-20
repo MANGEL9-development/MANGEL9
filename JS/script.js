@@ -33,6 +33,7 @@ function getLinks(level,elementID){
 			   {adress:dots+"contact/default.html" , text:"Contact"}];
 	
 	for(var x=0;x<links.length;x++){
+        // remove the link for the current page that the user is on
 		if(links[x].text==document.title){
 			//console.log(links[x].text+" to be removed");
 			links.splice(x,1);

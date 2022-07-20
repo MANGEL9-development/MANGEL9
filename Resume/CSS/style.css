@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto+Slab:wght@200&display=swap');
+
+:root {
+    --normal-text-font-size:20px;
+    --standard-transition-time:0.25s;
+}
+
+
+p,ul,div{
+    margin:0;
+    font-size:var(--normal-text-font-size);
+}
+
+p,a{
+    font-family:'Roboto Slab', serif;
+}
+
+#resume-container{
+    border-color:HSL(180,5%,90%);
+    border-style:solid;
+    border-width:1px;
+    box-shadow:0px 0px 6px 0px HSL(180,5%,40%);
+    box-sizing:border-box;
+    padding:30px;
+}
+
+.detail{
+    margin:0.25em 0 0;
+}
+.description{
+    padding-left:1em;
+    box-sizing:border-box;
+}
+
+.description>li{
+    margin-left:1em;
+    font-size:18px;
+}
+
+#page-container{
+    height:130vw; /* The standard dimensions for a paper is 8.5x11, and that is a height:width ratio of ~1.294 */
+}
+
+.page-section{
+    padding-left:10vw;
+    box-sizing:border-box;
+    width:inherit;
+	padding-right:1vw;
+}
+
+#top-section{
+    background-image:url("5786786491_fdeab9f822_o.jpg");
+    background-size:50vw;
+    height:10%;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:2fr 1fr;
+    grid-gap:0px 0px;
+    grid-template-areas:
+        "title"
+        "nav";
+    color:#FFFFFF;
+}
+
+#name{
+    margin:0;
+    grid-area:title;
+    font-family:Arima Madurai;
+    font-size:10vh;
+    overflow:hidden;
+    text-align:center;
+}
+
+#nav-container{
+    grid-area:nav;
+}
+
+#nav-links{
+    padding:0;
+    margin:0;
+    height:100%;
+    display:inline-block;
+}
+.nav-link{
+    display:inline-block;
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    height:inherit;
+    background-color:RGB(205,205,200);
+    background-image:linear-gradient(0deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 16%, rgba(0,0,0,0) 100%);
+}
+.nav-link.before-current-site{
+    background-image:linear-gradient(0deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 16%, rgba(0,0,0,0) 100%),
+                     linear-gradient(270deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 8%, rgba(0,0,0,0) 100%);
+}
+.nav-link#current-site{
+    background-color:RGB(255,255,250);
+    background-image:none;
+    /*box-shadow:0px 0px 10px 1px #FF0000; figure this out too*/
+    /*border-bottom:2px solid RGB(0,0,5); figure this out later*/
+}
+.nav-link#current-site+.nav-link{
+    background-image:linear-gradient(0deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 16%, rgba(0,0,0,0) 100%),
+                     linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 8%, rgba(0,0,0,0) 100%);
+}
+.nav-link#current-site>a{
+    /*text-decoration:underline;
+    text-decoration-color:RGBA(0,0,5,0.25);*/
+}
+.nav-link>a{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.nav-link-text{
+    padding:0 1vw;
+    box-sizing:border-box;
+    color:RGB(0,0,5);
+}
+
+#search-container{
+    display:inline-block;
+    /* this might not be the best way to do this, but it looks okay, so i'll keep it until i find something better*/
+      position:absolute;
+      right:1vw;
+    height:100%;
+    box-sizing:content-box;
+}
+#search-bar{
+    border:1.5px solid #FFFFFF;
+    border-radius:50px;
+    padding:1vh 1vw;
+}
+#search-input{
+    display:inline-block;
+    background:none;
+    border:none;
+    color:#FFFFFF;
+    vertical-align:top;
+}
+#search-input:focus{
+    outline:none;
+}
+#search-button{
+    display:inline-block;
+    height:1.3em;
+    width:1.3em;
+    vertical-align:top;
+    background-image:url("search-white.png");
+    background-size:contain;
+    background-color:transparent;
+    border:none;
+}
+
+#mid-section{
+    background-color:RGB(255,255,250);
+    height:75%; /*this is temporary. once a bottom section is added, this will be changed so the total height is still 100%*/
+    padding-top:60px;
+    padding-bottom:60px;
+    box-sizing:border-box;
+}
+#column-subsection{
+    display:grid;
+    grid-template-columns:1fr 1px 1fr;
+    grid-template-rows:1fr;
+    grid-gap:0px 20px;
+    grid-template-areas:
+        "left-side center-border right-side";
+}
+
+.column{
+    margin-bottom:48px;
+}
+#left-side{
+    /*border-right:1px solid RGB(150,150,155);*/
+    padding-right:2vw;
+    grid-area:left-side;
+}
+
+
+.subsection-example{
+    margin-bottom:1em;
+}
+
+.horizontal-divider{
+    width:100%;
+    height:0.5px;
+}
+.divider-fade-left{
+    background-image:linear-gradient(90deg, RGBA(150,150,155,0) 0%, RGBA(150,150,155,1) 5%, RGBA(150,150,155,1) 100%);
+}
+
+.icon-list-container{
+    display:grid;
+    grid-template-columns:1.5em auto;
+}
+
+#center-divide{
+    width:100%;
+    height:100%;
+    background-image:linear-gradient(180deg, RGBA(150,150,155,0) 0%, RGBA(150,150,155,1) 5%, RGBA(150,150,155,1) 95%, RGBA(150,150,155,0) 100%);
+}
+
+#right-side{
+    padding-left:2vw;
+    grid-area:right-side;
+}
+
+.small-icon{
+    background-size:1em;
+    background-position:left center;
+    background-repeat:no-repeat;
+}
+
+#phone-number-icon{
+    background-image:url("Icons/phone-call.png");
+}
+#email-icon{
+    background-image:url("Icons/email.png");
+}
+#location-icon{
+    background-image:url("Icons/map.png");
+}
+
+.proficiency-subsection{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.proficiency-meter{
+    border:1px solid RGB(250,250,255);
+    /*background-color:RGB(20,20,25);*/
+    margin-top:0.80em;
+    height:0.5em;
+}
+
+.proficiency-level{
+    height:100%;
+    background-color:RGB(230,230,240);
+    transition-duration:var(--standard-transition-time);
+}
+.proficiency-level:hover{
+    /*background-color:RGB(240,240,250);*/
+    box-shadow:0px 0px 5px 2px RGB(240,240,250);
+    
+    animation-name:proficiency-level-animation;
+    animation-duration:1s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+
+@keyframes proficiency-level-animation{
+    from{
+        background-color:RGBA(240,240,250);
+    }
+    to{
+        background-color:RGBA(250,250,255);
+    }
+}
+
+/*Levels:Proficient, Advanced, Intermediate, Beginner*/
+.proficiency-level.proficient{
+    width:100%;
+}
+.proficiency-level.advanced{
+    width:75%;
+}
+.proficiency-level.intermediate{
+    width:50%;
+}
+.proficiency-level.beginner{
+    width:25%;
+}
+
+#resume-footer{
+    height:15%;
+    background-image:linear-gradient(180deg, RGB(235,235,230), RGB(220,220,215));
+    padding-top:20px;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:auto 4vw;
+    padding-right:10vw;
+}
+#resume-footer-columns-container{
+    
+}
+
+#resume-footer h2{
+    font-size:20px;
+    text-transform:uppercase;
+    font-weight:600;
+}
+
+#resume-footer p{
+    font-size:17px;
+}
+
+#linkedin-icon{
+    background-image:url("linkedin.png");
+}
+#github-icon{
+    background-image:url("github-logo-silhouette-in-a-square.png");
+}
+
+p#thank-paragraph{
+    overflow:hidden;
+    font-size:12px;
+    color:RGBA(0,0,0,0.7);
+    text-align:center;
+}

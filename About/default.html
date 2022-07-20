@@ -1,106 +1,106 @@
 ﻿<!DOCTYPE html>
 <html>
-	<head>
-		<title>About</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="theme-color" content="#222222">
-		<link rel="stylesheet" href="../CSS/style.css" />
-		<link rel="stylesheet" href="../CSS/style-subsite.css" />
-		<script type="text/javascript" src="../JS/script.js"></script>
-		<link rel="icon" href="../CSS/icon_2020-01-29.png" />
-		<script type="text/javascript">
-				if(!isMobile){
-				window.addEventListener("load",function(){
-					fadeParagraphs();
-					window.addEventListener("scroll",function(e){
-						fadeParagraphs();
-					});
-				});
-			}
-			function fadeParagraphs(){
-				for(var i=1;i<=5;i++){
-					var y=document.getElementById("paragraph-"+i).getBoundingClientRect().top/screen.availHeight;
-					document.getElementById("paragraph-"+i).style.opacity=((0-(4*Math.pow((0.225-y),2)))+1);
-				}
-			}
-		</script>
-		<style type="text/css">
-			/* Phone */
-			@media screen and (max-width:479px){
-				.fading-paragraph{
-					width:100%;
-					margin-bottom:100px;
-					text-align:center;
-				}
-				#padding{
-					height:50px;
-				}
-			}
-			
-			/* Desktop */
-			@media screen and (min-width:720px){
-				.fading-paragraph{
-					opacity:0;
-					transition:0.125s;
-					width:60%;
-					margin-bottom:200px;
-					text-align:justify;
-				}
-				#padding{
-					height:calc(50vh - 120px);
-				}
-			}
-		</style>
-	</head>
-	<body onload="getLinks(1,'menu');"><!--
-		--><div id="film"><!--
-			--><div id="nav-container-container"><!--
-				--><div id="nav-container"><!--
-					--><div id="nav"><!--
-						--><ul id="menu"></ul><!--
-					--></div><!--
-					--><div id="logo"><!--
-						--><span id="sitename">MANGEL9</span><!--
-					--></div><!--
-				--></div><!--
-			--></div><!--
-			--><div id="content">
-				<div id="padding" style="width:100%;"></div>
-				<p id="paragraph-1" class="fading-paragraph">
-					<!--<h2></h2>-->
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac nisi faucibus tellus auctor fermentum. Maecenas cursus massa et justo pulvinar tempor. Donec mollis nibh vel viverra gravida. Duis odio nulla, sodales congue interdum non, consectetur in est. Sed quis urna luctus, imperdiet orci quis, pharetra ipsum. Sed rutrum metus nec risus pellentesque, eget lobortis magna tincidunt. Nulla id tortor vitae sapien maximus sagittis sit amet nec quam. Donec elementum risus sed nulla finibus, in lobortis erat consectetur. Aliquam erat volutpat. Donec ut libero mauris. Curabitur non magna eu urna imperdiet dapibus id sit amet erat. Vestibulum consequat massa ac tortor interdum, vel tincidunt leo luctus. Nunc convallis cursus leo, et facilisis sem porta eget. Aliquam ornare consectetur efficitur. Fusce eget tortor ante. In nisl velit, efficitur sed nulla tempor, suscipit gravida urna.
-				</p>
-				<p id="paragraph-2" class="fading-paragraph">
-					Praesent faucibus lacus a diam porttitor, ut hendrerit ante ornare. Cras nibh justo, finibus vel laoreet at, egestas in orci. Integer elementum mattis quam non varius. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque a risus diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum mi eros, sagittis id nunc a, viverra ullamcorper ligula. Sed sollicitudin turpis diam, ac venenatis velit posuere nec. Sed ut tincidunt ante. Fusce fermentum sapien vitae lobortis aliquet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi et condimentum dolor. Morbi aliquet augue faucibus tellus vehicula accumsan. Duis vitae dui sem. Suspendisse potenti. Pellentesque gravida, purus at lacinia mattis, mi nisl aliquam nibh, id tincidunt nibh mauris quis nisl.
-				</p>
-				<p id="paragraph-3" class="fading-paragraph">
-					Pellentesque dignissim mauris diam. Quisque mauris leo, venenatis eu hendrerit vitae, pharetra ut erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis vel nulla vitae lorem laoreet convallis. Sed fringilla, magna eget malesuada ultrices, augue justo aliquet massa, eget auctor enim dui vitae sapien. Cras fermentum velit erat. Cras hendrerit venenatis porta. Mauris facilisis scelerisque ante, vitae tincidunt tellus convallis at. Proin non varius velit, in vestibulum purus. Aliquam faucibus finibus neque quis gravida. Vivamus id rutrum ipsum. Proin finibus urna a erat pulvinar volutpat. Proin sapien erat, pretium a lorem quis, tristique tincidunt augue.
-				</p>
-				<p id="paragraph-4" class="fading-paragraph">
-					Vestibulum interdum at erat id malesuada. Morbi tristique luctus tempus. Phasellus ultrices ornare euismod. Morbi cursus felis non purus rutrum viverra. Nam rhoncus dapibus ipsum, quis fermentum nisl faucibus condimentum. Aliquam sapien ex, scelerisque non orci a, ullamcorper feugiat tellus. Fusce sit amet pharetra eros, non interdum dolor. Etiam tempor id velit in placerat. Morbi interdum tincidunt nibh. Vivamus ac orci orci. Aenean orci eros, tempus nec mauris vitae, finibus malesuada purus.
-				</p>
-				<p id="paragraph-5" class="fading-paragraph">
-					Mauris sed purus risus. Proin quis neque et risus laoreet hendrerit. Aliquam id sem nec quam cursus rhoncus in rutrum felis. Suspendisse viverra non nisl id tristique. Etiam tincidunt ante quis enim mollis, a pretium erat condimentum. Etiam quis tristique metus, sed vehicula tellus. Vestibulum lobortis elit sit amet velit ultricies, sit amet convallis ligula ornare. Ut eget ex ullamcorper, fringilla lacus quis, rutrum nisi. Praesent quis porta mi. Cras pellentesque purus ac ex ornare sagittis.
-				</p>
-			</div>
-			<div id="footer-container">
-				<div id="footer-gradient"></div>
-				<div id="footer">
-					<div id="footer-main-content">
-						footer
-					</div>
-					<div id="footer-sitename">
-						<div id="footer-sitename-leftside">
-							<div class="footer-sitename-line"></div>
-						</div>
-						<div id="footer-sitename-text">MANGEL9</div>
-						<div id="footer-sitename-rightside">
-							<div class="footer-sitename-line"></div>
-						</div>
-					</div>
-						<!-- Have "MANGEL9" at the bottom in the center -->
-				</div>
-			</div>
-		</div>
-	</body>
+    <head>
+        <title>About</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#222222">
+        <link rel="stylesheet" href="../CSS/style.css" />
+        <link rel="stylesheet" href="../CSS/style-subsite.css" />
+        <script type="text/javascript" src="../JS/script.js"></script>
+        <link rel="icon" href="../CSS/icon_2020-01-29.png" />
+        <script type="text/javascript">
+            if(!isMobile){
+                window.addEventListener("load",function(){
+                    fadeParagraphs();
+                    window.addEventListener("scroll",function(e){
+                        fadeParagraphs();
+                    });
+                });
+            }
+            function fadeParagraphs(){
+                for(var i=1;i<=5;i++){
+                    var y=document.getElementById("paragraph-"+i).getBoundingClientRect().top/screen.availHeight;
+                    document.getElementById("paragraph-"+i).style.opacity=((0-(4*Math.pow((0.225-y),2)))+1);
+                }
+            }
+        </script>
+        <style type="text/css">
+            /* Phone */
+            @media screen and (max-width:479px){
+                .fading-paragraph{
+                    width:100%;
+                    margin-bottom:100px;
+                    text-align:center;
+                }
+                #padding{
+                    height:50px;
+                }
+            }
+            
+            /* Desktop */
+            @media screen and (min-width:720px){
+                .fading-paragraph{
+                    opacity:0;
+                    transition:0.125s;
+                    width:60%;
+                    margin-bottom:200px;
+                    text-align:justify;
+                }
+                #padding{
+                    height:calc(50vh - 120px);
+                }
+            }
+        </style>
+    </head>
+    <body onload="getLinks(1,'menu');"><!--
+        --><div id="film"><!--
+            --><div id="nav-container-container"><!--
+                --><div id="nav-container"><!--
+                    --><div id="nav"><!--
+                        --><ul id="menu"></ul><!--
+                    --></div><!--
+                    --><div id="logo"><!--
+                        --><span id="sitename">MANGEL9</span><!--
+                    --></div><!--
+                --></div><!--
+            --></div><!--
+            --><div id="content">
+                <div id="padding" style="width:100%;"></div>
+                <p id="paragraph-1" class="fading-paragraph">
+                    <!--<h2></h2>-->
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac nisi faucibus tellus auctor fermentum. Maecenas cursus massa et justo pulvinar tempor. Donec mollis nibh vel viverra gravida. Duis odio nulla, sodales congue interdum non, consectetur in est. Sed quis urna luctus, imperdiet orci quis, pharetra ipsum. Sed rutrum metus nec risus pellentesque, eget lobortis magna tincidunt. Nulla id tortor vitae sapien maximus sagittis sit amet nec quam. Donec elementum risus sed nulla finibus, in lobortis erat consectetur. Aliquam erat volutpat. Donec ut libero mauris. Curabitur non magna eu urna imperdiet dapibus id sit amet erat. Vestibulum consequat massa ac tortor interdum, vel tincidunt leo luctus. Nunc convallis cursus leo, et facilisis sem porta eget. Aliquam ornare consectetur efficitur. Fusce eget tortor ante. In nisl velit, efficitur sed nulla tempor, suscipit gravida urna.
+                </p>
+                <p id="paragraph-2" class="fading-paragraph">
+                    Praesent faucibus lacus a diam porttitor, ut hendrerit ante ornare. Cras nibh justo, finibus vel laoreet at, egestas in orci. Integer elementum mattis quam non varius. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque a risus diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum mi eros, sagittis id nunc a, viverra ullamcorper ligula. Sed sollicitudin turpis diam, ac venenatis velit posuere nec. Sed ut tincidunt ante. Fusce fermentum sapien vitae lobortis aliquet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi et condimentum dolor. Morbi aliquet augue faucibus tellus vehicula accumsan. Duis vitae dui sem. Suspendisse potenti. Pellentesque gravida, purus at lacinia mattis, mi nisl aliquam nibh, id tincidunt nibh mauris quis nisl.
+                </p>
+                <p id="paragraph-3" class="fading-paragraph">
+                    Pellentesque dignissim mauris diam. Quisque mauris leo, venenatis eu hendrerit vitae, pharetra ut erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis vel nulla vitae lorem laoreet convallis. Sed fringilla, magna eget malesuada ultrices, augue justo aliquet massa, eget auctor enim dui vitae sapien. Cras fermentum velit erat. Cras hendrerit venenatis porta. Mauris facilisis scelerisque ante, vitae tincidunt tellus convallis at. Proin non varius velit, in vestibulum purus. Aliquam faucibus finibus neque quis gravida. Vivamus id rutrum ipsum. Proin finibus urna a erat pulvinar volutpat. Proin sapien erat, pretium a lorem quis, tristique tincidunt augue.
+                </p>
+                <p id="paragraph-4" class="fading-paragraph">
+                    Vestibulum interdum at erat id malesuada. Morbi tristique luctus tempus. Phasellus ultrices ornare euismod. Morbi cursus felis non purus rutrum viverra. Nam rhoncus dapibus ipsum, quis fermentum nisl faucibus condimentum. Aliquam sapien ex, scelerisque non orci a, ullamcorper feugiat tellus. Fusce sit amet pharetra eros, non interdum dolor. Etiam tempor id velit in placerat. Morbi interdum tincidunt nibh. Vivamus ac orci orci. Aenean orci eros, tempus nec mauris vitae, finibus malesuada purus.
+                </p>
+                <p id="paragraph-5" class="fading-paragraph">
+                    Mauris sed purus risus. Proin quis neque et risus laoreet hendrerit. Aliquam id sem nec quam cursus rhoncus in rutrum felis. Suspendisse viverra non nisl id tristique. Etiam tincidunt ante quis enim mollis, a pretium erat condimentum. Etiam quis tristique metus, sed vehicula tellus. Vestibulum lobortis elit sit amet velit ultricies, sit amet convallis ligula ornare. Ut eget ex ullamcorper, fringilla lacus quis, rutrum nisi. Praesent quis porta mi. Cras pellentesque purus ac ex ornare sagittis.
+                </p>
+            </div>
+            <div id="footer-container">
+                <div id="footer-gradient"></div>
+                <div id="footer">
+                    <div id="footer-main-content">
+                        footer
+                    </div>
+                    <div id="footer-sitename">
+                        <div id="footer-sitename-leftside">
+                            <div class="footer-sitename-line"></div>
+                        </div>
+                        <div id="footer-sitename-text">MANGEL9</div>
+                        <div id="footer-sitename-rightside">
+                            <div class="footer-sitename-line"></div>
+                        </div>
+                    </div>
+                        <!-- Have "MANGEL9" at the bottom in the center -->
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
