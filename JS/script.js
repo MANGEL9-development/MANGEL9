@@ -27,10 +27,10 @@ function getLinks(level,elementID){
 	
 	dots=repeatString("../",level);
 	
-	var links=[{adress:dots+"index.html" , text:"MANGEL9"},
-			   {adress:dots+"about/default.html" , text:"About"},
-			   {adress:dots+"resume/default.html" , text:"Resume"},
-			   {adress:dots+"contact/default.html" , text:"Contact"}];
+	var links=[{address:dots+"index.html" , text:"MANGEL9"},
+			   {address:dots+"About/default.html" , text:"About"},
+			   {address:dots+"Resume/default.html" , text:"Resume"},
+			   {address:dots+"Contact/default.html" , text:"Contact"}];
 	
 	for(var x=0;x<links.length;x++){
         // remove the link for the current page that the user is on
@@ -45,7 +45,7 @@ function getLinks(level,elementID){
 	}
 	
 	for(var i=0;i<links.length;i++){
-		linksHTML+="<li><a href='"+links[i].adress+"'><div class='link-text'>"+links[i].text+"</div><div class='link-accent'></div></a></li>";
+		linksHTML+="<li><a href='"+links[i].address+"'><div class='link-text'>"+links[i].text+"</div><div class='link-accent'></div></a></li>";
 	}
 		
 	document.getElementById(elementID).innerHTML=linksHTML;
