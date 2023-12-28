@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
 
 :root{
-	--menu-height:120px;
+	--menu-height:100px;
 	--mobile-menu-height:calc(var(--menu-height) * 1.25);
 	/* the 0.6 and 0.4 from the grid-template-row on #nav-container*/	
 	--mobile-menu-link-height:calc(var(--mobile-menu-height) * 0.6);
